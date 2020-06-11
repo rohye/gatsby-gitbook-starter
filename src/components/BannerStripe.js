@@ -51,9 +51,7 @@ const BannerStripe = () => {
                 />
               </div>
               <div className="bodyTextSmall">
-                <span className="textColor">
-                  Register for Hasura Con: A free, online conference on pushing the boundaries of GraphQL
-                </span>
+                Hasura Con: <span className='fontNormal'>Our free online conference on Pushing the boundaries of GraphQL<span className='mLeft15'>·</span></span><span className='underLine mLeft15'>Register now</span>
               </div>
             </div>
           </div>

@@ -7,9 +7,22 @@ import { Layout, Link } from "$components";
 import NextPrevious from '../components/NextPrevious';
 import '../components/styles.css';
 import config from '../../config';
-
+import Loadable from 'react-loadable';
+import LoadingProvider from '../components/mdxComponents/loading';
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
+const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
+
+let searchIndices = [];
+if(isSearchEnabled && config.header.search.indexName) {
+  searchIndices.push(
+    { name: `${config.header.search.indexName}`, title: `Results`, hitComp: `PageHit` },
+  );
+}
+const LoadableComponent = Loadable({
+  loader: () => import('../components/search/index'),
+  loading: LoadingProvider,
+});
 const Edit = styled('div')`
   padding: 1rem 1.5rem;
   text-align: right;
@@ -109,6 +122,11 @@ export default class MDXRuntimeTest extends Component {
           {metaDescription ? <meta property="twitter:description" content={metaDescription} /> : null}
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
+        {isSearchEnabled ? (
+          <div className={'searchWrapper'}>
+            <LoadableComponent collapse={true} indices={searchIndices} />
+          </div>
+          ): null}
         <div className={'titleWrapper'}>
           <h1 className={'title'}>
             {mdx.fields.title}

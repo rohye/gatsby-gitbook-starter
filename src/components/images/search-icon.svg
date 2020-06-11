@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#909090;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="prefix__Group_8288" data-name="Group 8288" transform="translate(9106 -5614)">
+        <g id="prefix__search" transform="translate(-9107 5613)">
+            <circle id="prefix__Ellipse_1062" cx="5.5" cy="5.5" r="5.5" class="prefix__cls-1" data-name="Ellipse 1062" transform="translate(3 3)"/>
+            <path id="prefix__Line_1476" d="M2.96 2.96L0 0" class="prefix__cls-1" data-name="Line 1476" transform="translate(12.289 12.289)"/>
+        </g>
+        <path id="prefix__Rectangle_10514" d="M0 0H16V16H0z" data-name="Rectangle 10514" transform="translate(-9106 5614)" style="opacity:.232;fill:none"/>
+    </g>
+</svg>

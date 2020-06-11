@@ -4,11 +4,12 @@ import { connectSearchBox } from "react-instantsearch-dom"
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { Search } from "styled-icons/fa-solid/Search";
-
+const searchIcon = require('../images/search-icon.svg');
 const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
-  margin-right: 10px
+  margin-right: 10px;
+  color: red;
 `
 const focus = (props) => css`
   background: white;
@@ -49,12 +50,6 @@ const collapseExpand = (props) => css`
 `
 
 const Input = styled.input`
-  outline: none;
-  border: none;
-  font-size: 1em;
-  background: white;
-  transition: ${props => props.theme.shortTrans};
-  border-radius: ${props => props.theme.smallBorderRadius};
   {collapseExpand}
 `
 const Form = styled.form`
@@ -63,7 +58,6 @@ const Form = styled.form`
   align-items: center;
   @media only screen and (max-width: 767px) {
     width: 100%;
-    margin-left: 15px;
   }
 `
 
@@ -73,7 +67,7 @@ export default connectSearchBox(({ refine, ...rest }) => {
   }
   return (
     <Form className={'formElement'} onSubmit={preventSubmit}>
-      <SearchIcon />
+      <img src={searchIcon} alt="search icon"/>
       <Input
         className={'searchInput '}
         type="text"
