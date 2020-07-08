@@ -1,19 +1,19 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://rohye.com",
 		"gaTrackingId": null,
 		"trailingSlash": false
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://learn.hasura.io",
-		"title": "Gatsby Gitbook Boilerplate",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"logoLink": "https://rohye.com",
+		"title": "Documentation",
+		"githubUrl": "https://github.com/rohye",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-			{ "text": "", "link": ""}
+			{ "text": "Blog", "link": "https://blog.rohye.com"}
 		],
 		"search": {
 			"enabled": false,
@@ -32,7 +32,7 @@ const config = {
       		"/codeblock" // add trailing slash if enabled above
     	],
 		"links": [
-			{ "text": "Hasura", "link": "https://hasura.io"},
+			{ "text": "GitHub", "link": "https://github.com/rohye"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
@@ -42,7 +42,7 @@ const config = {
 		"description": "Documentation built with mdx. Powering learn.hasura.io ",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
-		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
+		"favicon": "https://www.rohye.com/favicon.ico"
 	},
 	"pwa": {
 		"enabled": false, // disabling this will also remove the existing service worker.
